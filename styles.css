@@ -1,0 +1,62 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 54px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    width: 1500px;
+    height: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 0 300px;
+    margin-left: 300px;
+
+    line-height: 1;
+  }
+
+.d1{
+    display: flex;
+    gap: 40px;
+    
+    align-items: center;
+}
+  
+
+  .rect {
+    display: inline-block;
+    min-width: 300px;
+    height: 50px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  .rect:last-child{
+    width: 580px;
+  }
+  
+  .rect canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: inset(0 0 0 0); 
+  }
+ 
